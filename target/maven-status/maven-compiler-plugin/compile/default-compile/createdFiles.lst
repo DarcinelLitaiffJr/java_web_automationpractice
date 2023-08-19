@@ -1,0 +1,5 @@
+automationexercise\util\DataFakerGeneretor.class
+automationexercise\factory\seleniumfactory\SeleniumFactory.class
+automationexercise\factory\seleniumfactory\Elements.class
+automationexercise\factory\data\LoginData.class
+automationexercise\dto\LoginDto.class
