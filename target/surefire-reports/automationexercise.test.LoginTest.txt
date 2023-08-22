@@ -1,8 +1,0 @@
--------------------------------------------------------------------------------
-Test set: automationexercise.test.LoginTest
--------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 49.262 s - in automationexercise.test.LoginTest
-validarLoginDadosInvalidos(automationexercise.test.LoginTest)  Time elapsed: 19.125 s
-validarLoginDadosInvalidosTest4(automationexercise.test.LoginTest)  Time elapsed: 9.626 s
-validarLoginComDadosValidosTest3(automationexercise.test.LoginTest)  Time elapsed: 10.795 s
-validarLoginDadosValidos(automationexercise.test.LoginTest)  Time elapsed: 9.29 s

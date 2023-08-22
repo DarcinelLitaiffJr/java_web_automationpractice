@@ -14,7 +14,7 @@ public class LoginData {
     public LoginDto loginDadosValidos(){
         // Instanciar = conexão com LoginDto
         LoginDto loginDto = new LoginDto();
-        loginDto.setEmail("vs@gmail.com");
+        loginDto.setEmail("qatest@gmail.com");
         loginDto.setSenha("123456");
 
         return loginDto;
