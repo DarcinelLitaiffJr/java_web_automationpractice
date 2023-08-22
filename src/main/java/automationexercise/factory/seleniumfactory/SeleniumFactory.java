@@ -12,7 +12,7 @@ public class SeleniumFactory {
     // inicia o browser
     public void initBrowser(String url){
 
-        String caminhoDriver = "/opt/chromedriver114/chromedriver";
+        String caminhoDriver = "driver/chromedriver.exe";
         System.setProperty("webdriver.chrome.driver", caminhoDriver);
 
         driver = new ChromeDriver();
