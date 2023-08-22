@@ -11,7 +11,7 @@ public class BaseTest {
 
     @Before
     public void abrirNavegador(){
-        seleniumFactory.initBrowser("https://www.automationexercise.com/login");
+        seleniumFactory.initBrowser("http://www.automationpractice.pl/index.php?controller=authentication&back=my-account");
     }
 
 

@@ -28,7 +28,7 @@ public class LoginTest extends BaseTest{
         loginPage.preencherCampoSenha(usu.getSenha());      // Preenhce campo senha
         loginPage.clicarBtnAcessar();                       // Clicar em botao
         String msgm = loginPage.validarTextoBtnAposLogin(); // Ler o texto no elemento
-        Assert.assertEquals(msgm,"Logout");         // Validando os resultados
+        Assert.assertEquals(msgm,"Sign out");         // Validando os resultados
     }
 
     // Fluxo positivo - Cenário automatizado com execução de passo a passo
@@ -44,7 +44,7 @@ public class LoginTest extends BaseTest{
         loginPage.preencherCampoSenha(usu.getSenha());      // Preenhce campo senha
         loginPage.clicarBtnAcessar();                       // Clicar em botao
         String msgm = loginPage.validarMsgmEmailIncorreto(); // Ler o texto no elemento
-        Assert.assertEquals(msgm,"Your email or password is incorrect!"); // Validando o resultado
+        Assert.assertEquals(msgm,"There is 1 error"); // Validando o resultado
     }
 
     // Fluxo alternativo - Cenário automatizado com execução de fluxo
@@ -58,7 +58,7 @@ public class LoginTest extends BaseTest{
 
         LoginDto usu =  loginData.loginDadosValidos();                      // Criando a massa
         String msgm = loginPage.fazerLogin(usu.getEmail(),usu.getSenha());  // Executando fluxo
-        Assert.assertEquals(msgm,"Logout");                         // Validando o resultado
+        Assert.assertEquals(msgm,"Sign out");                         // Validando o resultado
 
     }
 
@@ -73,7 +73,7 @@ public class LoginTest extends BaseTest{
 
         LoginDto usu =  loginData.LoginDadoDinamicos();                              // Criando a massa
         String msgm = loginPage.loginEmailIncorreto(usu.getEmail(), usu.getSenha()); // Executando fluxo
-        Assert.assertEquals(msgm,"Your email or password is incorrect!");    // Validando o resultado
+        Assert.assertEquals(msgm,"There is 1 error");    // Validando o resultado
 
     }
 
